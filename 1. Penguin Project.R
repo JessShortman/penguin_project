@@ -17,10 +17,13 @@ ggplot(penguin, aes(x=flipper_length_mm, y=body_mass_g, colour = species)) +
 
 ggsave("figs/1_flipper_bodymass_regression.png") 
 
-# subset for female penguins 
+# subset for female penguins
 penguins_female <- subset(penguin, sex=='female')
 
+# create tab delimited file 
 library(readr)
 write_tsv(penguins_female,"results/1_penguin_female_only.txt")
 
+
+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
 
